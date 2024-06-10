@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5em;
+  background-color: #241c19;
+}
+
+/* Nav Bar */
+.nav {
+  position: fixed;
+  bottom: 15px;
+}
+
+ul {
+  font-family: "oswald";
+  font-weight: 400;
+
+  display: inline-flex;
+  margin: 0 0.4em;
+  list-style: none;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  margin: 0 0.5em;
+}
+
+a:hover {
+  color: #d1b18c;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+  aspect-ratio: 1 / 1;
+  color: white;
+  flex-grow: 1;
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url("images/card1.jpg");
+}
+
+.item2 {
+  background-image: url("images/card2.jpg");
+}
+
+.item3 {
+  grid-column-start: 4;
+  background-image: url("images/card3.jpg");
+}
+
+.item4 {
+  grid-column-start: 2;
+  background-image: url("images/card4.jpg");
+}
+
+.item5 {
+  background-image: url("images/card5.jpg");
+}
+
+.item6 {
+  grid-column-start: 3;
+  background-image: url("images/card6.jpg");
+}
+
+.item7 {
+  background-image: url("images/card7.jpg");
+}
+
+/* Text Items */
+
+.text-item1 {
+  display: flex;
+  align-self: end;
+  font-family: "oswald";
+  font-weight: 600;
+  font-size: 3.5em;
+  line-height: 1;
+  color: #fff;
+  grid-column-start: 3;
+}
